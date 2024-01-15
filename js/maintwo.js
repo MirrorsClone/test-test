@@ -230,3 +230,99 @@
 // console.log(getTimeFromMinutes(-150)); //=> "Ошибка, проверьте данные"
 
 
+// const personalPlanPeter = {
+//    name: "Peter",
+//    age: "29",
+//    skills: {
+//       languages: ['ru', 'eng'],
+//       programmingLangs: {
+//          js: '20%',
+//          php: '10%'
+//       },
+//       exp: '1 month'
+//    },
+
+//    showAgeAndLangs: function (plan) {
+//       let i = plan.skills.languages.join(' ');
+//       return `Мне ${plan.age} и я владею языками: ${i.toUpperCase()}`;
+//    }
+
+// };
+
+// console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter)); //=> 'Мне 29 и я владею языками: RU ENG'
+// function showExperience(plan) {
+
+//    return plan.skills.exp;
+// }
+// console.log(showExperience(personalPlanPeter)) // => '1 month'
+
+
+// function showProgrammingLangs(plan) {
+//    let result = '';
+//    for (let nameLangs in plan.skills.programmingLangs) {
+//       result += `Язык ${nameLangs} изучен на ${plan.skills.programmingLangs[nameLangs]} \n`;
+//    }
+//    return result;
+// }
+
+// console.log(showProgrammingLangs(personalPlanPeter)) // => "Язык js изучен на 20% Язык php изучен на 10%"
+
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+// function showFamily(arr) {
+//    if (arr.length == 0) {
+//       return `Семья пустая`
+//    } else {
+//       let i = arr.join(' ')
+//       return `Семья состоит из: ${i}`
+//    }
+// }
+
+// console.log(showFamily(family)); //  => 'Семья состоит из: Peter Ann Alex Linda'
+
+
+
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+// function standardizeStrings(arr) {
+//    for (let key of favoriteCities) {
+//       console.log(key.toLowerCase(arr));
+//    }
+// }
+// standardizeStrings(favoriteCities);
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+//    return str.split('').reverse().join('');
+// }
+
+// console.log(reverse(someString)); //=> 'gnirts egnarts emos si sihT'
+
+
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+// function availableCurr(arr, missingCurr) {
+//     let str = '';
+//     arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
+
+//     arr.forEach(function(curr, i) {
+//         if (curr !== missingCurr) {
+//             str += `${curr}\n`;
+//         }
+//     });
+
+//     // Или
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     if (arr[i] === missingCurr) {
+//     //         continue;
+//     //     }
+//     //     str += `${arr[i]}\n`;
+//     // }
+
+//     return str;
+// }
+
+// availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY')
