@@ -1,0 +1,8 @@
+body {
+    padding: 20px;
+}
+
+.project__h1 {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
